@@ -247,9 +247,9 @@
 
           {% if SSSC_HOST and SITEURL and article.status != "draft" %}
           <div id="sssc-iframe-container"
-            data-host="https://{{ SSC_HOST }}"
+            data-host="https://{{ SSSC_HOST }}"
             data-slug="/{{ article.url }}"
-            data-pageUrl="{{ SITEURL }}/{{ article.url }}"
+            data-url="{{ SITEURL }}/{{ article.url }}"
             data-title="{{ article.title }}">
           </div>
           <script async src="https://{{ SSSC_HOST }}/dist/js/sssc.js"></script>
